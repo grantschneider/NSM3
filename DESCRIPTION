@@ -1,7 +1,7 @@
 Package: NSM3
 Type: Package
-Version: 1.20
-Date: 2025-07-12
+Version: 1.21
+Date: 2025-08-11
 Title: Functions and Datasets to Accompany Hollander, Wolfe, and
         Chicken - Nonparametric Statistical Methods, Third Edition
 Authors@R: c(
@@ -14,7 +14,10 @@ Authors@R: c(
            role = "aut"),
     person(given = "Rachel",
            family = "Becvarik",
-           role = "aut"))
+           role = "aut"),
+    person(given = "Ott",
+           family = "Toomet",
+           role = "ctb"))
 Description: Designed to replace the tables which were in the back of the first two editions of Hollander and Wolfe - Nonparametric Statistical Methods.  Exact procedures are performed when computationally possible.  Monte Carlo and Asymptotic procedures are performed otherwise.  For those procedures included in the base packages, our code simply provides a wrapper to standardize the output with the other procedures in the package.
 License: GPL-2
 LazyLoad: yes
@@ -26,5 +29,6 @@ NeedsCompilation: yes
 Repository: CRAN
 Author: Grant Schneider [aut, cre],
   Eric Chicken [aut],
-  Rachel Becvarik [aut]
+  Rachel Becvarik [aut],
+  Ott Toomet [ctb]
 Maintainer: Grant Schneider <gschneidz@gmail.com>
