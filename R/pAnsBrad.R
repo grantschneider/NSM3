@@ -135,7 +135,7 @@ pAnsBrad <-function(x,y=NA,g=NA,method=NA,n.mc=10000){
     }
     
     if(outp$method=="Asymptotic"){
-      options(warn = (-1)); tmp<-ansari.test(y,x,"greater",exact=F); options(warn = (0));
+      options(warn = (-1)); tmp<-ansari.test(y,x,"less",exact=F); options(warn = (0));
       tmp2<-ansari.test(y,x,exact=F)
       outp$obs.stat<-as.numeric(tmp$statistic)
       outp$p.val<-tmp$p.value
