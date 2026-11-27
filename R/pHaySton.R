@@ -26,6 +26,9 @@ pHaySton<-function(x,g=NA,method=NA,n.mc=10000){
     if (!all(is.finite(g))) 
       stop("all group levels must be finite")
     g <- factor(g)
+    ord <- order(g)
+    x <- x[ord]
+    g <- g[ord]
     l<-as.numeric(table(g))
     k <- nlevels(g)
     if (k < 2) 
