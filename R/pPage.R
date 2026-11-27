@@ -74,14 +74,14 @@ if(outp$method=="Monte Carlo"){
   
   mc.vals<-sort(unique(mc.stats))
   mc.dist<-as.numeric(table(mc.stats))/n.mc
-  outp$p.val<-mean(mc.dist>=outp$obs.stat) 
+  outp$p.val<-mean(mc.stats>=outp$obs.stat) 
 }
 
 if(outp$method=="Asymptotic"){
     outp$stat.name<-"Page L*"
     outp$obs.stat<-(outp$obs.stat-((outp$n*outp$k*(outp$k+1)^2)/4))/(sqrt(outp$n*outp$k^2*(outp$k+1)*(outp$k^2-1)/144))
+    outp$p.val<-1-pnorm(outp$obs.stat)
   } 
-  outp$p.val<-1-pnorm(outp$obs.stat)
 
 class(outp)<-"NSM3Ch7p"
 outp
