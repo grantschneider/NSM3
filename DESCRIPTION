@@ -1,7 +1,7 @@
 Package: NSM3
 Type: Package
-Version: 1.20
-Date: 2025-07-12
+Version: 1.20.1
+Date: 2026-11-27
 Title: Functions and Datasets to Accompany Hollander, Wolfe, and
         Chicken - Nonparametric Statistical Methods, Third Edition
 Authors@R: c(
